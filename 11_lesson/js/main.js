@@ -3,7 +3,7 @@ if (playGame) {
     let playerChoise = prompt("Please enter rock, paper, or scissors.");
     if (playerChoise) {
         let playerOne = playerChoise.trim().toLowerCase();
-        if (playerOne === "rock" || playerOne === "paper" || "scissors") {
+        if (playerOne === "rock" || playerOne === "paper" || playerOne === "scissors") {
             let choice = ["rock", "paper", "scissors"];
             let computer = choice[Math.floor(Math.random() * choice.length)];
             let result = playerOne === computer ? "Tie game!"
